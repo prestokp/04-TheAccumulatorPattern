@@ -68,7 +68,7 @@ def run_test_sum_more_cosines():
         print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 2 (continued).
+    # DONE: 2 (continued).
     # Below this comment, add 2 more test cases of your own choosing.
     # -------------------------------------------------------------------------
     # Test 2:
@@ -79,6 +79,17 @@ def run_test_sum_more_cosines():
         print('        expected: ',round(expected, 5))
     else:
         print('        actual:   ', answer)
+
+    #Test 3:
+    expected = -0.399804
+    answer = sum_more_cosines(3,6)
+    print('Test 2 expected:', expected, '(approximately)')
+    if answer is not None:
+        print('         expected: ',round(expected,5 ))
+    else:
+        print('         actual:   ', answer)
+
+
 
 
 def sum_more_cosines(m, n):
@@ -138,7 +149,7 @@ def run_test_count_sines_from():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 4 (continued).
+    # DONE: 4 (continued).
     # Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
     #Test 2:
@@ -147,6 +158,29 @@ def run_test_count_sines_from():
     print('Test 2 expected:',expected)
     print('       actual:  ',answer)
 
+    #Test 3:
+    expected = 3
+    answer = count_sines_from(4,8)
+    print('Test 3 expected:',expected)
+    print('       actual:  ',answer)
+
+    #Test 4:
+    expected = 1
+    answer = count_sines_from(7,9)
+    print('Test 4 expected:',expected)
+    print('       actual:  ',answer)
+
+    #Test 5:
+    expected = 2
+    answer = count_sines_from(6,9)
+    print('Test 5 expected:',expected)
+    print('       actual:  ',answer)
+
+    #Test 6:
+    expected = 2
+    answer = count_sines_from(5,7)
+    print('Test 6 expected:',expected)
+    print('       actual:  ',answer)
 
 
 def count_sines_from(m, n):
@@ -205,7 +239,7 @@ def run_test_count_sines_vs_cosines():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 6 (continued).
+    # DONE: 6 (continued).
     # Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
@@ -213,7 +247,31 @@ def run_test_count_sines_vs_cosines():
     expected = 2
     answer = count_sines_vs_cosines(2)
     print('Test 2 expected:', expected)
-    print('       actual:  ',answer)
+    print('       actual:  ', answer)
+
+    #Test 3:
+    expected = 1
+    answer = count_sines_vs_cosines(1)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
+
+    #Test 4:
+    expected = 4
+    answer = count_sines_vs_cosines(3)
+    print('Test 4 expected:', expected)
+    print('       actual:  ', answer)
+
+    #Test 5:
+    expected = 6
+    answer = count_sines_vs_cosines(5)
+    print('Test 5 expected:', expected)
+    print('       actual:  ', answer)
+
+    #Test 6:
+    expected = 5
+    answer = count_sines_vs_cosines(4)
+    print('Test 6 expected:', expected)
+    print('       actual:  ', answer)
 
 
 def count_sines_vs_cosines(m):
